@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.max-width{
+    width: 1300px;
+    margin: auto;
+    border: 2px  solid blue;
+}
+
+/* main header section  */
+header{
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    background: lightcoral;
+
+}
+
+/* logo div  */
+header .left_nav{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+header .left_nav .logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .left_nav .description{
+    margin-left: 100px;
+}
+
+/* menu div  */
+header .menu {
+    width: 70%;
+    height: 70px;
+    border: 2px solid rgba(115, 255, 0, 0.74);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+
+header .menu a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border: 1px solid ;
+}
+/* main  header section ends  */
+
+
+
+/* poster section starts  here  */
+.poster {
+    height: 300px;
+    background-image: url("src/banner.jpg");
+    background-size: cover;
+}
