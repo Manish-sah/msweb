@@ -37,8 +37,6 @@ body{
     background-color:#E5EAE3;
 }
 
-.container{
-}
 
 .max-width{
     max-width: 1300px;
@@ -127,27 +125,6 @@ header .menu a:hover{
     background-color: var(--w_c);
     color: var(--p_c);
 }
-/* main  header section ends  */
-
-
-
-/* poster section starts  here  */
-
-
-
-
-/* poster section ends  */
-
-
-
-
-
-
-
-
-
-
-
 
 
 
