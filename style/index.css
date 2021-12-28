@@ -8,27 +8,47 @@
 :root{
     --p_c:  #FF5733;
     --s_c:  #89FC6B;
-    --w_c:  #E5EAE3;
+    --w_c:  white ;
     --b_c:  #484948;
+
+}
+
+h1,h2,h3{
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+.headingh1{
+    width: 100%;
+}
+
+
+.headingh1 h1{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
 body{
     height: 100%;
     width: 100%;
-    background-color: var(--w_c);
+    background-color:#E5EAE3;
+}
+
+.container{
 }
 
 .max-width{
     max-width: 1300px;
     margin: auto;
     background-color: white;
-    border: 2px  solid blue;
 }
 
 /* main header section  */
 header{
-    height: 200px;
+    height: 240px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -40,35 +60,52 @@ header{
 /* logo div  */
 header .top_header{
     width: 100%;
-    height: 140px;
+    height: 70%;
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
     
    
 }
 header .top_header .logo {
-    width: 100px;
-    height: 100px;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--w_c);
+    width: 170px;
+    
+}
+
+header .top_header .logo img{
     border-radius: 50%;
 
 }
 
 header .top_header .description{
-    height: 50px;
+  height: 100%;
+  width: 70%;
+  display: grid;
+  place-items: center;
+
+}
+
+header .top_header .description h3{
+    font-size: 3rem;
+    color:black;
+    padding: 0.5rem;
+
+}
+
+header .top_header .description h4{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* menu div  */
 header .menu {
     width: 100%;
-    height: 60px;
+    height: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -80,66 +117,27 @@ header .menu {
 header .menu a{
     text-decoration: none;
     font-size: 1rem;
-    padding: 8px 12px;
+    padding: 6px 12px;
     border: 1px solid ;
     color: var(--w_c);
+    border-radius: 5px;
+}
+
+header .menu a:hover{
+    background-color: var(--w_c);
+    color: var(--p_c);
 }
 /* main  header section ends  */
 
 
 
 /* poster section starts  here  */
-.poster {
-    background-size: cover;
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-}
 
-.poster .poster_div{
-    height: 60%;
-    width: 80%;
-}
 
-.poster .poster_div h1{
-    color: var(--w_c);
-    font-size: 2.5rem;
-    padding: 0.4rem 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: capitalize;
-}
 
-.poster .poster_div h3{
-    color: var(--p_c);
-    padding: 0.4rem 1rem;
-    font-size: 1.5rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-.poster .poster_div p{
-    color: black;
-    font-size: 1rem;
-    padding: 0.4rem 1rem;
-
-}
 /* poster section ends  */
 
-.services{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.services .service_div{
-    height: 80%;
-    width: 100%;
-    border: 1px solid red;
-}
-
-.customH3{
-    color: var(--p_c) !important;
-}
 
 
 
