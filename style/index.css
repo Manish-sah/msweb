@@ -5,52 +5,74 @@
 
 }
 
+:root{
+    --p_c:  #FF5733;
+    --s_c:  #89FC6B;
+    --w_c:  #E5EAE3;
+    --b_c:  #484948;
+
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--w_c);
+}
+
 .max-width{
-    width: 1300px;
+    max-width: 1300px;
     margin: auto;
+    background-color: white;
     border: 2px  solid blue;
 }
 
 /* main header section  */
 header{
-    height: 240px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: left;
-    background: lightcoral;
+    background-color: var(--p_c) !important;
 
 }
 
 /* logo div  */
-header .left_nav{
+header .top_header{
     width: 100%;
+    height: 140px;
+    padding: 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: left;
-    align-items: center;
+    align-items: left;
+    
+   
 }
-header .left_nav .logo {
-    width: 70px;
-    height: 70px;
-    margin-left: 50px;
+header .top_header .logo {
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--w_c);
+    border-radius: 50%;
 
 }
 
-header .left_nav .description{
-    margin-left: 100px;
+header .top_header .description{
+    height: 50px;
 }
 
 /* menu div  */
 header .menu {
-    width: 70%;
-    height: 70px;
-    border: 2px solid rgba(115, 255, 0, 0.74);
+    width: 100%;
+    height: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: var(--b_c);
 
     
 }
@@ -60,6 +82,7 @@ header .menu a{
     font-size: 1rem;
     padding: 8px 12px;
     border: 1px solid ;
+    color: var(--w_c);
 }
 /* main  header section ends  */
 
@@ -67,7 +90,83 @@ header .menu a{
 
 /* poster section starts  here  */
 .poster {
-    height: 300px;
-    background-image: url("src/banner.jpg");
     background-size: cover;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.poster .poster_div{
+    height: 60%;
+    width: 80%;
+}
+
+.poster .poster_div h1{
+    color: var(--w_c);
+    font-size: 2.5rem;
+    padding: 0.4rem 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+.poster .poster_div h3{
+    color: var(--p_c);
+    padding: 0.4rem 1rem;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.poster .poster_div p{
+    color: black;
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+
+}
+/* poster section ends  */
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .service_div{
+    height: 80%;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.customH3{
+    color: var(--p_c) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: 100px;
+    background-color: var(--b_c) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
